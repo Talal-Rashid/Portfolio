@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My Portfolio</h1>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <input type="text" name="title" placeholder="Title">
+        <textarea name="description" placeholder="Description"></textarea>
+        <input type="file" name="file">
+        <button type="submit">Upload</button>
+    </form>
+    <h2>Portfolio Items</h2>
+    <div id="portfolio"></div>
+    <script src="script.js"></script>
+</body>
+</html>
