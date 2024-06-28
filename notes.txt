@@ -90,4 +90,4 @@ Web 3.0:
     1. Not has a standard definition.
     2. Semantic web (For example: If there is an information about a city in a web page, we can mark that it is information related to city.)
     3. Using semantics, the content can be understood by the machine as well.
-Web Science: Interdisciplinary study of sociotechnical integration of the world wide web. It involves many disciplines. (Daraz involves ecommerce, health report website involves medical science discipline)
+Web Science: 
