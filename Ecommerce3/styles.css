@@ -99,7 +99,7 @@ body {
 }
 
 .welcome-section {
-    background: url('banner.jpg') no-repeat center center;
+    background: url('https://www.intel.com/content/dam/www/central-libraries/us/en/images/2023-01/s9-u05-03-overhead-pc-components-original-rwd.jpg.rendition.intel.web.1648.927.jpg') no-repeat center center;
     background-size: 100% auto;
     padding: 50px 20px;
     color: #fff;
@@ -215,66 +215,107 @@ body {
 
 /* Example styles for Buy Now page */
 
-.container {
-    display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+/* Basic reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.sidebar {
-    flex: 1;
-    margin-right: 20px;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background-color: #fff; /* Replace with your logo */
+    margin-right: 10px;
+}
+
+.tagline {
+    font-size: 1.2em;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+.navbar a.active {
+    background-color: #4CAF50;
+}
+
+.login-links {
+    margin-left: auto;
+}
+
+.main-content {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .categories {
-    background-color: #f0f0f0;
-    padding: 10px;
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    margin-right: 20px;
 }
 
 .categories h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.category {
+    margin-bottom: 20px;
+}
+
+.category h3 {
     font-size: 1.2em;
     margin-bottom: 10px;
 }
 
-.categories ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.category {
+.product-card {
+    background-color: #f0f0f0;
+    padding: 10px;
     margin-bottom: 10px;
 }
 
-.category a {
-    display: block;
-    padding: 8px 15px;
-    text-decoration: none;
-    color: #333;
+.featured-products {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
 }
 
-.category a:hover {
-    background-color: #ddd;
-}
-
-.subcategories {
-    display: none;
-    margin-top: 5px;
-}
-
-.category:hover .subcategories {
-    display: block;
-}
-
-.products {
-    flex: 3;
-    /* Styles for displaying products will be added dynamically */
-}
-
-/* Example footer styles */
-.footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
+.featured-products h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
