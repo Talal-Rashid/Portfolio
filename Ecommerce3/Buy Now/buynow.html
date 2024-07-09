@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now</title>
+    <link rel="stylesheet" href="buynow.css">
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="ContactUs.html">Contact Us</a>
+                <a href="buynow.html">Buy Now</a>
+                <a href="PCBuilder.html">PC Builder</a>
+                <a href="PhoneFinder.html">Phone Finder</a>
+                <a href="Chat.html">Chat</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰ Categories</button>
+        <div class="sidebar" id="sidebar">
+            <h2>Categories</h2>
+            <h3>PCs</h3>
+            <div class="subcategory">
+                <h4 onclick="showCategory('pre-built')">Pre-Built</h4>
+                <h4 onclick="showCategory('custom-build')">Custom Build</h4>
+                <h4>PC Components</h4>
+                <div class="subcategory">
+                    <h5 onclick="showCategory('cpu')">CPU</h5>
+                    <h5 onclick="showCategory('gpu')">GPU</h5>
+                    <h5>PSU</h5>
+                    <div class="subcategory">
+                        <h6 onclick="showCategory('ram')">RAM</h6>
+                        <h6 onclick="showCategory('cases')">Cases</h6>
+                        <h6>Motherboard</h6>
+                        <div class="subcategory">
+                            <h6 onclick="showCategory('intel')">Intel</h6>
+                            <h6 onclick="showCategory('amd')">AMD</h6>
+                        </div>
+                        <h6>CPU Cooler</h6>
+                        <div class="subcategory">
+                            <h6 onclick="showCategory('air-cooler')">Air Cooler</h6>
+                            <h6 onclick="showCategory('liquid-cooler')">Liquid Cooler</h6>
+                        </div>
+                        <h6>Storage Devices</h6>
+                        <div class="subcategory">
+                            <h6 onclick="showCategory('sata')">SSD (SATA)</h6>
+                            <h6 onclick="showCategory('m2')">SSD (M.2)</h6>
+                            <h6 onclick="showCategory('nvme')">SSD (NVME)</h6>
+                            <h6 onclick="showCategory('hdd')">HDD</h6>
+                        </div>
+                    </div>
+                </div>
+                <h4 onclick="showCategory('pc-peripherals')">PC Peripherals</h4>
+                <div class="subcategory">
+                    <h5 onclick="showCategory('monitor')">Monitor</h5>
+                    <h5 onclick="showCategory('keyboard')">Keyboard</h5>
+                    <h5 onclick="showCategory('mouse')">Mouse</h5>
+                    <h5 onclick="showCategory('speaker')">Speaker</h5>
+                    <h5 onclick="showCategory('pc-furniture')">PC Furniture</h5>
+                    <h5 onclick="showCategory('others')">Others</h5>
+                </div>
+            </div>
+            <h3>Mobile Phones</h3>
+            <div class="subcategory">
+                <h4 onclick="showCategory('smartphones')">Smartphones</h4>
+                <h4>Accessories</h4>
+                <div class="subcategory">
+                    <h5 onclick="showCategory('audio')">Audio</h5>
+                    <h5 onclick="showCategory('cases')">Cases</h5>
+                    <h5 onclick="showCategory('screen-protectors')">Screen Protectors</h5>
+                </div>
+            </div>
+            <h3>Laptops</h3>
+            <div class="subcategory">
+                <h4>Laptops</h4>
+                <div class="subcategory">
+                    <h5 onclick="showCategory('gaming-laptops')">Gaming Laptops</h5>
+                    <h5 onclick="showCategory('productivity-laptops')">Productivity Laptops</h5>
+                </div>
+                <h4>Laptop Accessories</h4>
+                <div class="subcategory">
+                    <h5 onclick="showCategory('screen-protectors-laptop')">Screen Protectors</h5>
+                    <h5 onclick="showCategory('laptop-bags')">Laptop Bags</h5>
+                    <h5>Peripherals</h5>
+                    <div class="subcategory">
+                        <h6 onclick="showCategory('monitor-laptop')">Monitor</h6>
+                        <h6 onclick="showCategory('keyboard-laptop')">Keyboard</h6>
+                        <h6 onclick="showCategory('mouse-laptop')">Mouse</h6>
+                        <h6 onclick="showCategory('speaker-laptop')">Speaker</h6>
+                        <h6 onclick="showCategory('others-laptop')">Others</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="categories" id="center-categories">
+            <h2>Categories</h2>
+            <h3 onclick="showCategory('pcs')">PCs</h3>
+            <h3 onclick="showCategory('mobile-phones')">Mobile Phones</h3>
+            <h3 onclick="showCategory('laptops')">Laptops</h3>
+        </section>
+
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-card">Featured Product 1</div>
+            <div class="product-card">Featured Product 2</div>
+            <div class="product-card">Featured Product 3</div>
+        </section>
+        <section id="category-content" class="category-content"></section>
+    </main>
+
+    <footer class="footer">
+        <!-- Footer content -->
+    </footer>
+    <script src="buynow.js"></script>
+</body>
+</html>
