@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Tech Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            background-color: #121212;
+            color: white;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .sidebar {
+            width: 250px;
+            background: #1e1e1e;
+            padding: 20px;
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+        }
+        .sidebar h2 {
+            color: #ff6600;
+        }
+        .category {
+            margin: 15px 0;
+            cursor: pointer;
+            padding: 10px;
+            background: #333;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .category:hover {
+            background: #ff6600;
+        }
+        .subcategories {
+            display: none;
+            padding-left: 15px;
+        }
+        .category:hover .subcategories {
+            display: block;
+        }
+        .subcategories a {
+            display: block;
+            padding: 5px 0;
+            color: white;
+            text-decoration: none;
+        }
+        .subcategories a:hover {
+            color: #ff6600;
+        }
+        .products-container {
+            margin-left: 270px;
+            padding: 20px;
+            flex: 1;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .product {
+            background: #222;
+            padding: 15px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .product img {
+            width: 150px;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Categories</h2>
+        <div class="category">Laptops
+            <div class="subcategories">
+                <a href="#">Gaming Laptops</a>
+                <a href="#">Business Laptops</a>
+                <a href="#">Student Laptops</a>
+            </div>
+        </div>
+        <div class="category">Smartphones
+            <div class="subcategories">
+                <a href="#">Android Phones</a>
+                <a href="#">iPhones</a>
+                <a href="#">Budget Phones</a>
+            </div>
+        </div>
+        <div class="category">Accessories
+            <div class="subcategories">
+                <a href="#">Headphones</a>
+                <a href="#">Keyboards</a>
+                <a href="#">Mouse</a>
+            </div>
+        </div>
+    </div>
+    <div class="products-container">
+        <h1>Explore Our Products</h1>
+        <div class="products-grid">
+            <div class="product">
+                <img src="laptop-placeholder.jpg" alt="Laptop">
+                <h3>Placeholder Laptop</h3>
+                <p>A high-performance laptop for gaming and work.</p>
+            </div>
+            <div class="product">
+                <img src="smartphone-placeholder.jpg" alt="Smartphone">
+                <h3>Placeholder Smartphone</h3>
+                <p>A powerful smartphone with an amazing display.</p>
+            </div>
+            <div class="product">
+                <img src="headphones-placeholder.jpg" alt="Headphones">
+                <h3>Placeholder Headphones</h3>
+                <p>Experience immersive sound quality with these headphones.</p>
+            </div>
+            <div class="product">
+                <img src="keyboard-placeholder.jpg" alt="Keyboard">
+                <h3>Placeholder Keyboard</h3>
+                <p>A mechanical keyboard for smooth and responsive typing.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Store - Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #121212;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+        }
+        .auth-wrapper {
+            background: #1e1e1e;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+        }
+        h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            background: #333;
+            color: white;
+            outline: none;
+            font-size: 16px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            background: #ff6600;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #cc5500;
+        }
+        .toggle-link {
+            color: #ff6600;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .signup-container {
+            display: none;
+        }
+        label {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="auth-wrapper">
+        <div class="login-container" id="login-container">
+            <h2>Login</h2>
+            <div class="input-group">
+                <input type="email" id="login-email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="login-password" placeholder="Password" required>
+            </div>
+            <button onclick="login()">Login</button>
+            <p>Don't have an account? <span class="toggle-link" onclick="showSignup()">Sign up</span></p>
+        </div>
+        
+        <div class="signup-container" id="signup-container">
+            <h2>Sign Up</h2>
+            <div class="input-group">
+                <input type="text" id="signup-name" placeholder="Name" required>
+            </div>
+            <div class="input-group">
+                <input type="text" id="signup-address" placeholder="Address" required>
+            </div>
+            <div class="input-group">
+                <input type="tel" id="signup-phone" placeholder="Phone Number" required>
+            </div>
+            <div class="input-group">
+                <input type="email" id="signup-email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="signup-password" placeholder="Password" required>
+            </div>
+            <label>
+                <input type="checkbox" id="signup-role"> Register as Admin
+            </label>
+            <button onclick="signup()">Sign Up</button>
+            <p>Already have an account? <span class="toggle-link" onclick="showLogin()">Login</span></p>
+        </div>
+    </div>
+    
+    <script>
+        function showSignup() {
+            document.getElementById("login-container").style.display = "none";
+            document.getElementById("signup-container").style.display = "block";
+        }
+        
+        function showLogin() {
+            document.getElementById("signup-container").style.display = "none";
+            document.getElementById("login-container").style.display = "block";
+        }
+    </script>
+</body>
+</html>
